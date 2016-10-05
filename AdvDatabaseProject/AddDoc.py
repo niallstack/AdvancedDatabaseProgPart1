@@ -32,4 +32,6 @@ class SampleApp(tk.Tk):
         db.save(doc)
 
 w = SampleApp()
+w.iconbitmap('computer.ico')
+w.title("PC Planet-Add")
 w.mainloop()
