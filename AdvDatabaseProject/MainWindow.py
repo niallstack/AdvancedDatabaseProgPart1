@@ -10,10 +10,12 @@ topFrame.pack()
 bottomFrame = Frame(window)
 window.minsize(width=600,height=200)
 
+def callback():
+    exec(open("AddDoc.py").read())
 
 titleLabel = Label(topFrame, text="PC Planet")
 titleLabel.config(font=("Ariel", 44))
-addButton = Button(topFrame, text="Add", height=2, width=10)
+addButton = Button(topFrame, text="Add", command=callback, height=2, width=10)
 viewButton = Button(topFrame, text="View", height=2, width=10)
 deleteButton = Button(topFrame, text="Delete", height=2, width=10)
 
