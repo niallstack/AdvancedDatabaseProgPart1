@@ -5,6 +5,8 @@ class SampleApp(tk.Tk):
 
     def __init__(self):
         tk.Tk.__init__(self)
+        self.listbox = tk.Listbox(self, width=150, height=20)
+        self.listbox.grid(row=0, colum=0)
         self.labelComponent = tk.Label(self, text="Component:")
         self.labelManufacturer = tk.Label(self, text="Manufacturer:")
         self.labelModel = tk.Label(self, text="Model:")
@@ -15,14 +17,14 @@ class SampleApp(tk.Tk):
         #self.button.pack()
 
         #self.entryComponent.pack()
-        self.labelComponent.grid(row=0, column=0)
-        self.labelManufacturer.grid(row=1, column=0)
-        self.labelModel.grid(row=2, column=0)
+        self.labelComponent.grid(row=1, column=0)
+        self.labelManufacturer.grid(row=2, column=0)
+        self.labelModel.grid(row=3, column=0)
 
-        self.entryComponent.grid(row=0, column=1)
-        self.entryManufacturer.grid(row=1, column=1)
-        self.entryModel.grid(row=2, column=1)
-        self.button.grid(row=3, column=1)
+        self.entryComponent.grid(row=1, column=1)
+        self.entryManufacturer.grid(row=2, column=1)
+        self.entryModel.grid(row=3, column=1)
+        self.button.grid(row=4, column=1)
 
     def on_button(self):
         couch = couchdb.Server()
@@ -33,5 +35,5 @@ class SampleApp(tk.Tk):
 
 w = SampleApp()
 w.iconbitmap('computer.ico')
-w.title("PC Planet - Add")
+w.title("PC Planet - Update")
 w.mainloop()

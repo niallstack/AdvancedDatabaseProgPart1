@@ -3,8 +3,8 @@ import couchdb
 
 window = Tk()
 
-#window.iconbitmap('computer.ico')
-window.title("PC Planet-View")
+window.iconbitmap('computer.ico')
+window.title("PC Planet - Views")
 
 frame = Frame(window)
 frame.pack()
@@ -75,8 +75,9 @@ PriByManModButton = Button(frame, text="Price by Manufacturer and Model")
 RedByManModStockButton = Button(frame, text="Reduced View by Manufacturer, Model and Stock")
 RedByManSumButton = Button(frame, text="Reduced View by Manufacturer and Sum")
 
-viewsLabel = Label(frame, text="----Views----")
-viewsLabel.pack()
+viewsLabel = Label(frame, text="Views")
+viewsLabel.config(font=("Ariel", 12))
+viewsLabel.pack(pady=12)
 
 basicButton.bind("<Button-1>", printBasic)
 compByManModButton.bind("<Button-1>", printCompByManMod)
@@ -94,8 +95,9 @@ ManByManDocButton.pack()
 ManByModPriButton.pack()
 PriByManModButton.pack()
 
-ReducesLabel = Label(frame, text="----Reduces----")
-ReducesLabel.pack()
+ReducesLabel = Label(frame, text="Reduces")
+ReducesLabel.config(font=("Ariel", 12))
+ReducesLabel.pack(pady=12)
 
 RedByManModStockButton.pack()
 RedByManSumButton.pack()
