@@ -16,12 +16,18 @@ def openAddDoc():
 def openViewDoc():
     exec(open("ViewDoc.py").read())
 
+def openDeleteDoc():
+    exec(open("DeleteDoc.py").read())
+
+def openUpdateDoc():
+    exec(open("UpdateDoc.py").read())
+
 titleLabel = Label(topFrame, text="Main Menu")
 titleLabel.config(font=("Ariel", 12))
 addButton = Button(topFrame, text="Add", command=openAddDoc, height=2, width=10)
-viewButton = Button(topFrame, text="View", height=2, width=10)
-deleteButton = Button(topFrame, text="Delete", height=2, width=10)
-updateButton = Button(topFrame, text="Update", height=2, width=10)
+viewButton = Button(topFrame, text="View", command=openViewDoc, height=2, width=10)
+deleteButton = Button(topFrame, text="Delete", command=openDeleteDoc, height=2, width=10)
+updateButton = Button(topFrame, text="Update", command=openUpdateDoc, height=2, width=10)
 
 titleLabel.grid(row=0, column=1, pady=12)
 addButton.grid(row=1, column=0, pady=12)
