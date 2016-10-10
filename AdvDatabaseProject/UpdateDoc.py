@@ -6,7 +6,7 @@ class SampleApp(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
         self.listbox = tk.Listbox(self, width=150, height=20)
-        self.listbox.grid(row=0, colum=0)
+        self.listbox.grid(row=0, column=0)
         self.labelComponent = tk.Label(self, text="Component:")
         self.labelManufacturer = tk.Label(self, text="Manufacturer:")
         self.labelModel = tk.Label(self, text="Model:")
