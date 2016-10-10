@@ -1,37 +1,43 @@
-import tkinter as tk
+from tkinter import *
 import couchdb
 
-class SampleApp(tk.Tk):
+window = Tk()
 
-    def __init__(self):
-        tk.Tk.__init__(self)
-        self.labelComponent = tk.Label(self, text="Component:")
-        self.labelManufacturer = tk.Label(self, text="Manufacturer:")
-        self.labelModel = tk.Label(self, text="Model:")
-        self.entryComponent = tk.Entry(self)
-        self.entryManufacturer = tk.Entry(self)
-        self.entryModel = tk.Entry(self)
-        self.button = tk.Button(self, text="Enter", command=self.on_button)
-        #self.button.pack()
+window.iconbitmap('computer.ico')
+window.title("PC Planet")
 
-        #self.entryComponent.pack()
-        self.labelComponent.grid(row=0, column=0)
-        self.labelManufacturer.grid(row=1, column=0)
-        self.labelModel.grid(row=2, column=0)
+frame = Frame(window)
+frame.pack()
 
-        self.entryComponent.grid(row=0, column=1)
-        self.entryManufacturer.grid(row=1, column=1)
-        self.entryModel.grid(row=2, column=1)
-        self.button.grid(row=3, column=1)
+labelComponent = Label(frame, text="Component:")
+labelManufacturer = Label(frame, text="Manufacturer:")
+labelModel = Label(frame, text="Model:")
+entryComponent = Entry(frame)
+entryManufacturer = Entry(frame)
+entryModel = Entry(frame)
+button = Button(frame, text="Enter")
+labelComponent.grid(row=0, column=0)
+labelManufacturer.grid(row=1, column=0)
+labelModel.grid(row=2, column=0)
 
-    def on_button(self):
-        couch = couchdb.Server()
-        couch = couchdb.Server('http://127.0.0.1:5984/')
-        db = couch['pcparts']
-        doc = {'component': self.entryComponent.get(), 'manufacturer': self.entryManufacturer.get(), 'model': self.entryModel.get()}
-        db.save(doc)
+entryComponent.grid(row=0, column=1)
+entryManufacturer.grid(row=1, column=1)
+entryModel.grid(row=2, column=1)
+button.grid(row=3, column=1)
 
-w = SampleApp()
-w.iconbitmap('computer.ico')
-w.title("PC Planet - Add")
-w.mainloop()
+
+def on_button(event):
+    couch = couchdb.Server()
+    couch = couchdb.Server('http://127.0.0.1:5984/')
+    db = couch['pcparts']
+    doc = {'component': entryComponent.get(), 'manufacturer': entryManufacturer.get(), 'model': entryModel.get()}
+    db.save(doc)
+    entryComponent.delete(0, 'end')
+    entryModel.delete(0, 'end')
+    entryManufacturer.delete(0, 'end')
+
+button.bind("<Button-1>", on_button)
+
+
+
+window.mainloop()
