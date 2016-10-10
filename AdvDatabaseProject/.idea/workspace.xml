@@ -23,8 +23,8 @@
       <file leaf-file-name="AddDoc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AddDoc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="35" />
+            <state relative-caret-position="800">
+              <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -35,8 +35,8 @@
       <file leaf-file-name="ViewDoc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ViewDoc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+            <state relative-caret-position="450">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -44,11 +44,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteDoc.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MapReduces.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MapReduces.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteDoc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DeleteDoc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+            <state relative-caret-position="667">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="56" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -59,8 +71,8 @@
       <file leaf-file-name="UpdateDoc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UpdateDoc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="29" />
+            <state relative-caret-position="200">
+              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -97,6 +109,7 @@
         <option value="$PROJECT_DIR$/UpdateDoc.py" />
         <option value="$PROJECT_DIR$/DeleteDoc.py" />
         <option value="$PROJECT_DIR$/ViewDoc.py" />
+        <option value="$PROJECT_DIR$/MapReduces.py" />
       </list>
     </option>
   </component>
@@ -158,7 +171,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.UpdateDoc">
+  <component name="RunManager" selected="Python.MapReduces">
     <configuration default="false" name="AddDoc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,23 +185,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="AdvDatabaseProject" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AddDoc.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MainWindow" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="AdvDatabaseProject" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MainWindow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -240,6 +236,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="AdvDatabaseProject" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DeleteDoc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MapReduces" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AdvDatabaseProject" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MapReduces.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -380,18 +393,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.AddDoc" />
-      <item index="1" class="java.lang.String" itemvalue="Python.MainWindow" />
-      <item index="2" class="java.lang.String" itemvalue="Python.UpdateDoc" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ViewDoc" />
-      <item index="4" class="java.lang.String" itemvalue="Python.DeleteDoc" />
+      <item index="1" class="java.lang.String" itemvalue="Python.UpdateDoc" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ViewDoc" />
+      <item index="3" class="java.lang.String" itemvalue="Python.DeleteDoc" />
+      <item index="4" class="java.lang.String" itemvalue="Python.MapReduces" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.UpdateDoc" />
-        <item index="1" class="java.lang.String" itemvalue="Python.DeleteDoc" />
-        <item index="2" class="java.lang.String" itemvalue="Python.AddDoc" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ViewDoc" />
-        <item index="4" class="java.lang.String" itemvalue="Python.MainWindow" />
+        <item index="0" class="java.lang.String" itemvalue="Python.MapReduces" />
+        <item index="1" class="java.lang.String" itemvalue="Python.UpdateDoc" />
+        <item index="2" class="java.lang.String" itemvalue="Python.DeleteDoc" />
+        <item index="3" class="java.lang.String" itemvalue="Python.AddDoc" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ViewDoc" />
       </list>
     </recent_temporary>
   </component>
@@ -568,6 +581,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UpdateDoc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MainWindow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="692">
@@ -576,10 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UpdateDoc.py">
+    <entry file="file://$PROJECT_DIR$/DeleteDoc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="29" />
+        <state relative-caret-position="667">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="56" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -588,8 +611,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AddDoc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="35" />
+        <state relative-caret-position="800">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -598,18 +621,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ViewDoc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        <state relative-caret-position="450">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DeleteDoc.py">
+    <entry file="file://$PROJECT_DIR$/MapReduces.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="317">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
