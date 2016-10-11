@@ -1,0 +1,6 @@
+function(doc) {
+if ('manufacturer' in doc && 'model' in doc) { 
+var key = doc.manufacturer || doc.model || manufacturer, value = { by: doc.manufacturer, Model: doc.model };
+      emit(key, value);
+ } 
+} 
