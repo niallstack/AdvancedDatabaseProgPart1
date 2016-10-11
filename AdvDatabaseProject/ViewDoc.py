@@ -1,22 +1,27 @@
 from tkinter import *
 import couchdb
 
+#Creates GUI window
 window = Tk()
 
+#Adding icon and title to the window
 window.iconbitmap('computer.ico')
 window.title("PC Planet - Views")
 
+#Creating a frame in the window
 frame = Frame(window)
 frame.pack()
 window.minsize(width=700,height=600)
+
+#Adding a listbox
 listbox = Listbox(frame, width=150, height=20)
 listbox.pack()
 
-
+#Connecting to the Database
 server = couchdb.client.Server('http://127.0.0.1:5984/')
 db = server['pcparts']
 
-
+#All these functions output various views to the listbox
 def printBasic(event):
     basic_list = db.view('_all_docs')
     listbox.delete('0', END)
@@ -66,6 +71,7 @@ def printRedByManSum(event):
         listbox.insert(END, r)
 
 
+#Creating the buttons
 basicButton = Button(frame, text="Basic View")
 compByManModButton = Button(frame, text="Components by Manufacturer and Model")
 cpuByCoresDocButton = Button(frame, text="CPU by Cores and Document")
@@ -75,10 +81,12 @@ PriByManModButton = Button(frame, text="Price by Manufacturer and Model")
 RedByManModStockButton = Button(frame, text="Reduced View by Manufacturer, Model and Stock")
 RedByManSumButton = Button(frame, text="Reduced View by Manufacturer and Sum")
 
+#Creating labels
 viewsLabel = Label(frame, text="Views")
 viewsLabel.config(font=("Ariel", 12))
 viewsLabel.pack(pady=12)
 
+#Connecting the buttons to functions
 basicButton.bind("<Button-1>", printBasic)
 compByManModButton.bind("<Button-1>", printCompByManMod)
 cpuByCoresDocButton.bind("<Button-1>", printCpuByCoresDoc)
@@ -88,20 +96,14 @@ PriByManModButton.bind("<Button-1>", printPriByManMod)
 RedByManModStockButton.bind("<Button-1>", printRedByManModStock)
 RedByManSumButton.bind("<Button-1>", printRedByManSum)
 
+#Adding the buttons to the frame
 basicButton.pack()
 compByManModButton.pack()
 cpuByCoresDocButton.pack()
 ManByManDocButton.pack()
 ManByModPriButton.pack()
 PriByManModButton.pack()
-
-ReducesLabel = Label(frame, text="Reduces")
-ReducesLabel.config(font=("Ariel", 12))
-ReducesLabel.pack(pady=12)
-
 RedByManModStockButton.pack()
 RedByManSumButton.pack()
-
-
 
 window.mainloop()

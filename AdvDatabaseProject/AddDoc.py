@@ -1,14 +1,18 @@
 from tkinter import *
 import couchdb
 
+#Creating GUI window
 window = Tk()
 
+#Adding icon and title to the window
 window.iconbitmap('computer.ico')
 window.title("PC Planet")
 
+#Creating a frame in the window
 frame = Frame(window)
 frame.pack()
 
+#Creating and adding labels, text fields and buttons to the frame
 labelComponent = Label(frame, text="Component:")
 labelManufacturer = Label(frame, text="Manufacturer:")
 labelModel = Label(frame, text="Model:")
@@ -25,7 +29,7 @@ entryManufacturer.grid(row=1, column=1)
 entryModel.grid(row=2, column=1)
 button.grid(row=3, column=1)
 
-
+#A function that connects to the database then saves a document to it
 def on_button(event):
     couch = couchdb.Server()
     couch = couchdb.Server('http://127.0.0.1:5984/')
@@ -36,6 +40,7 @@ def on_button(event):
     entryModel.delete(0, 'end')
     entryManufacturer.delete(0, 'end')
 
+#This connects the button to the on_button function
 button.bind("<Button-1>", on_button)
 
 
