@@ -1,2 +1,4 @@
-Import tkinter
-Import couchDB
+To run the Python files you need to install two packages, Tkinter and the python CouchDB package.
+If you use a linux shell in windows just use these commands to install:
+			- apt-get install python-tk
+			- sudo pip install couchdb
